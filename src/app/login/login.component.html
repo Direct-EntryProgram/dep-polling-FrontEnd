@@ -1,8 +1,13 @@
 <div id="wrapper">
+  <form>
   <h1>Polling System for DEP-8</h1>
-  <input class="form-control" type="text" placeholder="Enter your name">
+  <input name="txt-name" class="form-control" type="text" placeholder="Enter your name" [(ngModel)]="name">
   <div id="button-wrapper">
     <button class="btn btn-primary"(click)="enter()"> ENTER</button>
   </div>
+    <div id="invalird" *ngIf="true">Access denied: invalid name</div>
+  </form>
 </div>
+
+
 
