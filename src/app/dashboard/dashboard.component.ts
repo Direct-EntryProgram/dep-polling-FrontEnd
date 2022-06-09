@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
+  pols:Array<number>=[ ]
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+  createPol(){
+    this.pols.push(1);
   }
 
 }

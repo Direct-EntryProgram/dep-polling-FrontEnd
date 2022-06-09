@@ -1,5 +1,6 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {UserService} from "../service/user.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-login',
@@ -13,18 +14,22 @@ export class LoginComponent implements OnInit {
   @ViewChild("txtName")
   txtNameWrapper !:ElementRef<HTMLInputElement>;
 
-  constructor(private userService: UserService) {
-
+  constructor(private userService: UserService,
+              private routerService:Router){
   }
 
   ngOnInit(): void {
+    if(this.userService.getPrincipal()){
+      this.routerService.navigateByUrl('/dashboard');
+    }
   }
 
   enter(): void {
     if (this.userService.login(this.name)) {
-      this.invalid = true;
-    } else {
       this.invalid = false;
+      this.routerService.navigateByUrl('/dashboard');
+    } else {
+      this.invalid = true;
       this.txtNameWrapper.nativeElement.select();
       this.txtNameWrapper.nativeElement.focus();
     }
