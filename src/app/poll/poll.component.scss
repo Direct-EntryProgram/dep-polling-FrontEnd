@@ -1,0 +1,33 @@
+section{
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+div{
+  font-size: 2rem;
+}
+
+#up{
+  color: #e8ad61;
+}
+
+#down{
+  color: #b69d9d;
+}
+
+small{
+  padding: 10px 0;
+
+}
+
+:host{
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover{
+    background-color: lightgray;
+  }
+}

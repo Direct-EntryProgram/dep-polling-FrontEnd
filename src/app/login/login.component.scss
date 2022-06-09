@@ -1,17 +1,21 @@
-#wrapper {
+
+
+#wrapper{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 100px;
+  padding: 50px;
+  height: 100vh;
   text-align: center;
 
-  input {
-    margin-top:20px ;
+  input{
+    margin-top: 20px;
     text-align: center;
   }
 }
-#btn-wrapper{
-  margin-top: 5px;
-  display: flex;
 
+#button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }

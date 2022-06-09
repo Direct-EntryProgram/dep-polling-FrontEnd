@@ -1,5 +1,11 @@
-heder{
+header{
   display: flex;
   gap: 5px;
   padding: 10px;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 5px;
 }
