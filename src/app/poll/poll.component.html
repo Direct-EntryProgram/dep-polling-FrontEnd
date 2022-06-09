@@ -1,8 +1,10 @@
 <section>
-  <h1>Here is the title</h1>
-  <small class="text-black-50">created by:Admin</small>
+  <h1>{{poll.title}}</h1>
+
   <div>
-    <span is="up">▲</span> 10
-    <span id="down">▼</span> 5
+    <span is="up">▲</span> {{poll.upVote}}
+    <span id="down">▼</span> {{poll.downVote}}
   </div>
 </section>
+<small class="text-black-50">ID:{{}}created by:{{poll.createBy}}</small>
+

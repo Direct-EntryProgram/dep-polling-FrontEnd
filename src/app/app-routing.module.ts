@@ -13,10 +13,15 @@ const routes: Routes = [
     component: LoginComponent
   },
   {
+    path:'polls/:poll',   //---->Route/path variables
+    component:LoginComponent
+  },
+  {
     path:"",
     pathMatch:'full',
     redirectTo:'login'
-  }
+  },
+
 
 ];
 
