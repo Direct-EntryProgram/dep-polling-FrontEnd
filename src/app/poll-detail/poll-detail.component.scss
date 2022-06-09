@@ -1,0 +1,55 @@
+:host{
+  padding: 10px;
+}
+
+header{
+  padding: 0 10px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+
+  h1{
+    margin: 0;
+  }
+
+  img{
+    width: 45px;
+
+  }
+
+  img#back{
+    width: 45px;
+  }
+  img#delete{
+    width: 45px;
+    height: 45px;
+  }
+
+  padding-bottom:20px;
+  border-bottom: 1px solid lightgray;
+
+}
+
+main{
+  display: flex;
+  font-size: 5rem;
+  gap: 10px;
+  justify-content: center;
+
+  #up{
+    color: #52a7e5;
+    cursor: pointer;
+
+    &:hover{
+      color: #041e44;
+    }
+  }
+  #down{
+    color: #d56060;
+    cursor: pointer;
+
+    &:hover{
+      color: #2f0404;
+    }
+  }
+}
